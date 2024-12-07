@@ -82,6 +82,7 @@
     "react-native": "0.76.3",
     "react-native-builder-bob": "^0.35.2",
     "release-it": "^17.10.0",
+    "semantic-release": "^24.2.0",
     "typescript": "^5.2.2"
   },
   "resolutions": {
