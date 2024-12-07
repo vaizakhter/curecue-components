@@ -1,13 +1,15 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-curecue-components';
-
-const result = multiply(3, 7);
+import { StyleSheet, SafeAreaView } from 'react-native';
+import { Carousel, CarouselItem } from 'react-native-curecue-components';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Carousel
+        CarouselItem={CarouselItem}
+        items={[{ title: 'Item 1' }, { title: 'Item 2' }, { title: 'Item 3' }]}
+        itemStyle={styles.item}
+      />
+    </SafeAreaView>
   );
 }
 
@@ -15,6 +17,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
   },
+  item: { backgroundColor: 'gray', borderRadius: 10, padding: 10 },
 });

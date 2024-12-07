@@ -196,5 +196,8 @@
     "languages": "js",
     "type": "library",
     "version": "0.45.3"
+  },
+  "dependencies": {
+    "@shopify/flash-list": "^1.7.2"
   }
 }

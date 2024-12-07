@@ -1,3 +1,2 @@
-export function multiply(a: number, b: number): number {
-  return a * b;
-}
+export * from './components/carousel';
+export * from './components/carousel/helper/CarouselItem';
