@@ -1,16 +1,27 @@
 import { styles } from './styles';
-import { CarouselIntervalWidth, ItemsWidth } from './helper/constrains';
+import {
+  carouselIntervalWidth,
+  itemsWidth as itemWidthDefault,
+} from './helper/constrains';
 import { FlashList } from '@shopify/flash-list';
 
 import { View } from 'react-native';
 import type { CarouselProps } from './types';
+import { useCallback } from 'react';
 
 export const Carousel = ({
   items,
   carouselStyle,
   itemStyle,
   CarouselItem,
+  itemWidth,
+  snapInterval,
 }: CarouselProps) => {
+  const keyExtractor = useCallback(
+    (item: any, i: number) => `${i}-${String(item)}`,
+    []
+  );
+
   const renderItem = ({ item }: { item: { [key: string]: string } }) => (
     <CarouselItem item={item} itemStyle={itemStyle} />
   );
@@ -19,12 +30,12 @@ export const Carousel = ({
     <View style={[styles.carousel, carouselStyle]}>
       <FlashList
         data={items}
-        estimatedItemSize={ItemsWidth}
+        estimatedItemSize={itemWidth ?? itemWidthDefault}
         renderItem={renderItem}
-        keyExtractor={(index) => String(index)}
+        keyExtractor={keyExtractor}
         horizontal
         showsHorizontalScrollIndicator={false}
-        snapToInterval={CarouselIntervalWidth} // Adjust based on item width + margin
+        snapToInterval={snapInterval ?? carouselIntervalWidth} // Adjust based on item width + margin
         decelerationRate="fast"
       />
     </View>

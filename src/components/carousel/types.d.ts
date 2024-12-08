@@ -5,6 +5,8 @@ interface CarouselProps {
   carouselStyle?: StyleProp<ViewStyle>; // Added carouselStyle prop
   itemStyle?: StyleProp<ViewStyle>; // Added itemStyle prop
   CarouselItem: React.FC<CarouselItemProps>;
+  itemWidth?: number;
+  snapInterval?: number;
 }
 
 interface CarouselItemProps {

@@ -19,5 +19,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
   },
-  item: { backgroundColor: 'gray', borderRadius: 10, padding: 10 },
+  item: {
+    backgroundColor: 'gray',
+    borderWidth: 1,
+    borderColor: 'lightgray',
+    padding: 10,
+  },
 });

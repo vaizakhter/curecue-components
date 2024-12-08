@@ -1,14 +1,13 @@
 import { StyleSheet } from 'react-native';
-import { ItemsWidth } from './helper/constrains';
+import { itemsWidth } from './helper/constrains';
 
 export const styles = StyleSheet.create({
   carousel: {
     flexDirection: 'row',
   },
   item: {
-    width: ItemsWidth,
+    width: itemsWidth,
     backgroundColor: 'red',
-    margin: 10,
     height: 100,
   },
 });

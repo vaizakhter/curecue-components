@@ -1,7 +1,7 @@
 import { Dimensions } from 'react-native';
 
-export const ScreenWidth = Dimensions.get('window').width;
+export const screenWidth = Dimensions.get('window').width;
 
-export const ItemsWidth = ScreenWidth - 20;
+export const itemsWidth = screenWidth;
 
-export const CarouselIntervalWidth = ScreenWidth;
+export const carouselIntervalWidth = screenWidth;
