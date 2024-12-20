@@ -1,6 +1,6 @@
 import type { StyleProp, ViewStyle } from 'react-native';
 
-interface CarouselProps {
+export interface CarouselProps {
   items: { [key: string]: any }[];
   carouselStyle?: StyleProp<ViewStyle>; // Added carouselStyle prop
   itemStyle?: StyleProp<ViewStyle>; // Added itemStyle prop
@@ -9,7 +9,7 @@ interface CarouselProps {
   snapInterval?: number;
 }
 
-interface CarouselItemProps {
+export interface CarouselItemProps {
   item: { [key: string]: any };
   itemStyle?: StyleProp<ViewStyle>;
 }

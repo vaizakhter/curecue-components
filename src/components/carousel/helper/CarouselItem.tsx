@@ -2,7 +2,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { styles } from '../styles';
 import type { CarouselItemProps } from '../types';
 
-export const CarouselItem = ({ item, itemStyle }: CarouselItemProps) => {
+const CarouselItem = ({ item, itemStyle }: CarouselItemProps) => {
   const defaultStyle = styles.item;
   const combinedStyle = itemStyle
     ? StyleSheet.compose(defaultStyle, itemStyle)
@@ -14,3 +14,5 @@ export const CarouselItem = ({ item, itemStyle }: CarouselItemProps) => {
     </View>
   );
 };
+
+export default CarouselItem;

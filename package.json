@@ -15,6 +15,26 @@
         "types": "./lib/typescript/commonjs/src/index.d.ts",
         "default": "./lib/commonjs/index.js"
       }
+    },
+    "./Carousel": {
+      "import": {
+        "types": "./lib/typescript/module/src/components/carousel/index.d.ts",
+        "default": "./lib/module/components/carousel/index.js"
+      },
+      "require": {
+        "types": "./lib/typescript/commonjs/src/components/carousel/index.d.ts",
+        "default": "./lib/commonjs/components/carousel/index.js"
+      }
+    },
+    "./CarouselItem": {
+      "import": {
+        "types": "./lib/typescript/module/src/components/carousel/helper/CarouselItem.d.ts",
+        "default": "./lib/module/components/carousel/CarouselItem.js"
+      },
+      "require": {
+        "types": "./lib/typescript/commonjs/src/components/carousel/helper/CarouselItem.d.ts",
+        "default": "./lib/commonjs/components/carousel/CarouselItem.js"
+      }
     }
   },
   "files": [
