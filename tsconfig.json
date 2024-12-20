@@ -2,7 +2,9 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-native-curecue-components": ["./src/index"]
+      "react-native-curecue-components": ["./src/index"],
+      "react-native-curecue-components/Carousel": ["./src/components/carousel/index"],
+      "react-native-curecue-components/CarouselItem": ["./src/components/carousel/helper/CarouselItem"],
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

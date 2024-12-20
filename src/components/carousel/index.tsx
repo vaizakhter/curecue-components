@@ -9,7 +9,7 @@ import { View } from 'react-native';
 import type { CarouselProps } from './types';
 import { useCallback } from 'react';
 
-export const Carousel = ({
+const Carousel = ({
   items,
   carouselStyle,
   itemStyle,
@@ -41,3 +41,5 @@ export const Carousel = ({
     </View>
   );
 };
+
+export default Carousel;

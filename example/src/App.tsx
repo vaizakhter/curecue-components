@@ -1,5 +1,6 @@
 import { StyleSheet, SafeAreaView } from 'react-native';
-import { Carousel, CarouselItem } from 'react-native-curecue-components';
+import Carousel from 'react-native-curecue-components/Carousel';
+import CarouselItem from 'react-native-curecue-components/CarouselItem';
 
 export default function App() {
   return (
